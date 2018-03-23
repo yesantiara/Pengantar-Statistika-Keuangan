@@ -6,9 +6,9 @@ presentvalue <- function(num, a, t, i, m=TRUE)
   #k: presentvalue
   
   #Pilihan(num)
-  #1: bunga tunggal
-  #2: bunga majemuk nominal
-  #3: bunga majemuk kontinu
+  #1: Present value bunga tunggal
+  #2: Present value bunga majemuk nominal
+  #3: Present value bunga majemuk kontinu
   switch(num, 
          satu = {
            pv = a/(1+i*t)
