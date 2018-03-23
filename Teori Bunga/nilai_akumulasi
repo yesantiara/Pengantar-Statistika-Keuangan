@@ -6,9 +6,9 @@ nilaiakumulasi <- function(num, k, t, i, m=TRUE)
   #k: presentvalue
   
   #Pilihan(num)
-  #1: bunga tunggal
-  #2: bunga majemuk nominal
-  #3: bunga majemuk kontinu
+  #1: Nilai akumulasi bunga tunggal
+  #2: Nilai akumulasi bunga majemuk nominal
+  #3: Nilai akumulasi bunga majemuk kontinu
   switch(num, 
          satu = {
            ak = k*(1+i*t)
