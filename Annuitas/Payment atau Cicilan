@@ -1,0 +1,27 @@
+payment <- function(num, i, t, nilai, m=TRUE)
+{
+  j=i/m
+n=m*t
+v=1/(1+j)
+  #i: bunga
+  #k:cicilan sebesar k
+  #n:banyak pembayaran
+  #t: tahun
+  #m: per 3 bulan atau jangka waktu bayar dalam setahun
+  #pilihan 1 cicilan majemuk akhir
+  #pilihan 2 cicilan majemuk awal
+  switch(num, 
+         satu = {
+           k_an=nilai/((1-v^n)/j)
+           k_sn=nilai/((((1+j)^n)-1)/j)
+           print(k_an)
+           print(k_sn)
+         },
+         dua = {
+           k_an=nilai/((1-(v^n))/(j*v))
+           k_sn=nilai/((((1+j)^n)-1)/(j*v))
+           print(k_an)
+           print(k_sn)
+         }
+  )
+}
